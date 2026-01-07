@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>假面騎士 空我 - Kamen Rider Web</title>
+    <style>
+        /* 基本設定 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+            background-color: #f4f1e9; /* 模擬圖片米色背景 */
+            color: #333;
+        }
+
+        /* 頂部導覽列 */
+        .top-nav {
+            background: #fff;
+            border-bottom: 2px solid #999;
+            padding: 10px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo { height: 35px; }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #111;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+         color: red;
+        }
+
+        /* 主容器：使用 Flexbox 分三欄 */
+        .main-wrapper {
+            display: flex; /* 使用 Flex 代替 Grid */
+            max-width: 1300px;
+            margin: 30px auto;
+            padding: 0 20px;
+            align-items: flex-start;
+        }
+
+        /* 左側欄：固定寬度 */
+        .left-col {
+            width: 300px;
+            flex-shrink: 0; /* 防止被擠壓 */
+        }
+
+        .left-col img {
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* 中間主要內容：自動延伸 */
+        .center-col {
+            flex-grow: 1; /* 佔據剩餘空間 */
+            margin: 0 30px;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        /* 右側欄：固定寬度 */
+        .right-col {
+            width: 260px;
+            flex-shrink: 0;
+        }
+
+        /* 標題與 Logo 區塊 */
+        .series-header {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .series-icon { height: 60px; margin-right: 20px; }
+
+        .info-text p { margin: 5px 0; font-size: 14px; }
+
+        /* 圖片中的“轉換。”大標語 */
+        .main-quote {
+            font-size: 38px;
+            font-weight: 900;
+            margin: 35px 0;
+            color: #000;
+            letter-spacing: 5px;
+        }
+
+        .intro-desc {
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+
+        .calendar-title {
+            color: #c00;
+            font-weight: bold;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header class="top-nav">
+    <a href="kamanrider.html" class="home-link">
+    <img src="img/Kamen_rider_series_logo.png" class="logo" alt="Logo"></a>
+    <nav class="nav-links">
+        <a href="CARD.html">假面騎士</a>
+        <a href="series.html">系列介紹</a>
+    </nav>
+</header>
+
+<div class="main-wrapper">
+    <div class="left-col">
+        <img src="img/Ghost_series.webp" alt="Poster">
+        <div style="font-size: 12px; margin-top: 15px; line-height: 1.6;">
+            <strong>信用</strong><br>
+            <br>原作：石之森章太郎<br>
+                劇本：福田卓郎等
+        </div>
+    </div>
+
+    <div class="center-col">
+        <div class="series-header">
+            <img src="img/Ghost_icon.png" class="series-icon" alt="Icon">
+            <div class="info-text">
+                <h2 style="margin: 0; font-size: 24px;">假面騎士Ghost</h2>
+                <p><strong>播出週期</strong> 2015.10.4 - 2016.9.25 [共50集]</p>
+                <p><strong>主題曲</strong> 我ら思う、故に我ら在り / 氣志團</p>
+            </div>
+        </div>
+
+        <div class="main-quote">“命、燃やすぜ！”</div>
+
+        <div class="intro-desc">
+         一心想成為幽靈獵人的天空寺尊於18歲生日時，收到來自十年前亡父生前所寄的幽靈眼魂（Ghost Eyecon）後，突如其來地來自異世界的怪人眼魔出現在面前並盯上此物，甚至為救青梅竹馬月村朱里和御成而身亡。
+         得到仙人的幫助之下而獲得Ghost驅動器變身，成為假面騎士Ghost並得以99日短暫的生命復甦。
+         為了收集能實現願望的15個英雄眼魂，而即將投身影響世界命運的戰鬥中。
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

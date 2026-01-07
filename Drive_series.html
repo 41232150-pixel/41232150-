@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>假面騎士 Drive - Kamen Rider Web</title>
+    <style>
+        /* 基本設定 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+            background-color: #f4f1e9; /* 模擬圖片米色背景 */
+            color: #333;
+        }
+
+        /* 頂部導覽列 */
+        .top-nav {
+            background: #fff;
+            border-bottom: 2px solid #999;
+            padding: 10px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo { height: 35px; }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #111;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+         color: red;
+        }
+
+        /* 主容器：使用 Flexbox 分三欄 */
+        .main-wrapper {
+            display: flex; /* 使用 Flex 代替 Grid */
+            max-width: 1300px;
+            margin: 30px auto;
+            padding: 0 20px;
+            align-items: flex-start;
+        }
+
+        /* 左側欄：固定寬度 */
+        .left-col {
+            width: 300px;
+            flex-shrink: 0; /* 防止被擠壓 */
+        }
+
+        .left-col img {
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* 中間主要內容：自動延伸 */
+        .center-col {
+            flex-grow: 1; /* 佔據剩餘空間 */
+            margin: 0 30px;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        /* 右側欄：固定寬度 */
+        .right-col {
+            width: 260px;
+            flex-shrink: 0;
+        }
+
+        /* 標題與 Logo 區塊 */
+        .series-header {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .series-icon { height: 60px; margin-right: 20px; }
+
+        .info-text p { margin: 5px 0; font-size: 14px; }
+
+        /* 圖片中的“轉換。”大標語 */
+        .main-quote {
+            font-size: 38px;
+            font-weight: 900;
+            margin: 35px 0;
+            color: #000;
+            letter-spacing: 5px;
+        }
+
+        .intro-desc {
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .calendar-title {
+            color: #c00;
+            font-weight: bold;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header class="top-nav">
+    <a href="kamanrider.html" class="home-link">
+    <img src="img/Kamen_rider_series_logo.png" class="logo" alt="Logo"></a>
+    <nav class="nav-links">
+        <a href="CARD.html">假面騎士</a>
+        <a href="series.html">系列介紹</a>
+    </nav>
+</header>
+
+<div class="main-wrapper">
+    <div class="left-col">
+        <img src="img/Drive_series.webp" alt="Poster">
+        <div style="font-size: 12px; margin-top: 15px; line-height: 1.6;">
+            <strong>信用</strong><br>
+            <br>原作：石之森章太郎<br>
+                劇本：三條陸等
+        </div>
+    </div>
+
+    <div class="center-col">
+        <div class="series-header">
+            <img src="img/Drive_icon.png" class="series-icon" alt="Icon">
+            <div class="info-text">
+                <h2 style="margin: 0; font-size: 24px;">假面騎士Drive</h2>
+                <p><strong>播出週期</strong> 2014.10.5 - 2015.9.27 [共48集]</p>
+                <p><strong>主題曲</strong> SURPRISE-DRIVE / Mitsuru Matsuoka EARNEST DRIVE</p>
+            </div>
+        </div>
+
+        <div class="main-quote">“この男、刑事で假面ライダー!”</div>
+
+        <div class="intro-desc">
+         2014年4月8日的晚上，全世界頻繁爆發令所有的人類和物質變得靜止的怪異現象「渾濁」，由人工生命體惡路程式所引發並作出大規模破壞行動，事件後期被稱之為「Global Freeze(全球凍結)」。
+         半年後，警視廳內部成立了部門特狀課，負責調查與後期稱之為「重加速」的現象有關特別案件，而特狀課有一位曾經在「Global Freeze」事件中造成了陰霾而變得散漫的青年刑警泊進之介，偶然與設置於跑車賽特朗內會說話的腰帶相遇。
+         在發生新一度和「重加速」有關的事件之中，使用腰帶變身成為假面騎士Drive與引發事件的怪物戰鬥。
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

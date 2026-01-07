@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>假面騎士 OOO - Kamen Rider Web</title>
+    <style>
+        /* 基本設定 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+            background-color: #f4f1e9; /* 模擬圖片米色背景 */
+            color: #333;
+        }
+
+        /* 頂部導覽列 */
+        .top-nav {
+            background: #fff;
+            border-bottom: 2px solid #999;
+            padding: 10px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo { height: 35px; }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #111;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+         color: red;
+        }
+
+        /* 主容器：使用 Flexbox 分三欄 */
+        .main-wrapper {
+            display: flex; /* 使用 Flex 代替 Grid */
+            max-width: 1300px;
+            margin: 30px auto;
+            padding: 0 20px;
+            align-items: flex-start;
+        }
+
+        /* 左側欄：固定寬度 */
+        .left-col {
+            width: 300px;
+            flex-shrink: 0; /* 防止被擠壓 */
+        }
+
+        .left-col img {
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* 中間主要內容：自動延伸 */
+        .center-col {
+            flex-grow: 1; /* 佔據剩餘空間 */
+            margin: 0 30px;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        /* 右側欄：固定寬度 */
+        .right-col {
+            width: 260px;
+            flex-shrink: 0;
+        }
+
+        /* 標題與 Logo 區塊 */
+        .series-header {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .series-icon { height: 60px; margin-right: 20px; }
+
+        .info-text p { margin: 5px 0; font-size: 14px; }
+
+        /* 圖片中的“轉換。”大標語 */
+        .main-quote {
+            font-size: 38px;
+            font-weight: 900;
+            margin: 35px 0;
+            color: #000;
+            letter-spacing: 5px;
+        }
+
+        .intro-desc {
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        /* 下方影片區塊：也是用 Flex 分兩半 */
+        .video-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .video-item {
+            flex: 1;
+            text-align: center;
+        }
+
+        .video-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .calendar-title {
+            color: #c00;
+            font-weight: bold;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header class="top-nav">
+    <a href="kamanrider.html" class="home-link">
+    <img src="img/Kamen_rider_series_logo.png" class="logo" alt="Logo"></a>
+    <nav class="nav-links">
+        <a href="CARD.html">假面騎士</a>
+        <a href="series.html">系列介紹</a>
+    </nav>
+</header>
+
+<div class="main-wrapper">
+    <div class="left-col">
+        <img src="img/OOO_series.webp" alt="Poster">
+        <div style="font-size: 12px; margin-top: 15px; line-height: 1.6;">
+            <strong>信用</strong><br>
+            <br>原作：石之森章太郎<br>
+                劇本：小林靖子
+        </div>
+    </div>
+
+    <div class="center-col">
+        <div class="series-header">
+            <img src="img/OOO_icon.jpg" class="series-icon" alt="Icon">
+            <div class="info-text">
+                <h2 style="margin: 0; font-size: 24px;">假面騎士OOO</h2>
+                <p><strong>播出週期</strong> 2010.9.5 - 2011.8.28 [共48集]</p>
+                <p><strong>主題曲</strong> Anything Goes！ / 大黑摩真</p>
+            </div>
+        </div>
+
+        <div class="main-quote">“俺には夢はねえ、だが夢を守ることはできる”</div>
+
+        <div class="intro-desc">
+         本作中怪人是由800年的沉睡中覺醒的動物族，分別為鳥系、昆蟲系、貓科系、重力系，水棲系和恐龍系這六大族類。
+         其中鳥類的幹部怪人（Ankh）因意外藉助使用瀕死狀態的泉刑警身體出現，與主角合作令其成為假面騎士OOO。
+         主角是名沒有夢想，沒有工作，也沒有家庭的男人，[5]隨著戰鬥才漸漸對於活著這件事情有了確實的體會。
+         變身所使用的核心硬幣是作為本身能量來源的存在，沉睡的怪人因為醒來後發現作為自己身體能量源的代幣不足，因此開始追尋代幣。
+         怪人的終極目的，是希望搜集齊所有的代幣進行完全復活，成為萬物之「王」。
+         根據核心硬幣在Driver（變身器）擺放順序分別給與頭部、手臂、雙腳能力進行變身，通過打倒敵對怪人，可以獲得隱藏能力的硬幣。
+         初期變身的形態為老鷹、老虎、蝗蟲的結合體（鷹虎蝗），擁有獵鷹的視力和老虎的銳爪還有蝗蟲的跳躍力。
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

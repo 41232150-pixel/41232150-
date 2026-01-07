@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>假面騎士 龍騎 - Kamen Rider Web</title>
+    <style>
+        /* 基本設定 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+            background-color: #f4f1e9; /* 模擬圖片米色背景 */
+            color: #333;
+        }
+
+        /* 頂部導覽列 */
+        .top-nav {
+            background: #fff;
+            border-bottom: 2px solid #999;
+            padding: 10px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo { height: 35px; }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #111;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+         color: red;
+        }
+
+        /* 主容器：使用 Flexbox 分三欄 */
+        .main-wrapper {
+            display: flex; /* 使用 Flex 代替 Grid */
+            max-width: 1300px;
+            margin: 30px auto;
+            padding: 0 20px;
+            align-items: flex-start;
+        }
+
+        /* 左側欄：固定寬度 */
+        .left-col {
+            width: 300px;
+            flex-shrink: 0; /* 防止被擠壓 */
+        }
+
+        .left-col img {
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* 中間主要內容：自動延伸 */
+        .center-col {
+            flex-grow: 1; /* 佔據剩餘空間 */
+            margin: 0 30px;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        /* 右側欄：固定寬度 */
+        .right-col {
+            width: 260px;
+            flex-shrink: 0;
+        }
+
+        /* 標題與 Logo 區塊 */
+        .series-header {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .series-icon { height: 60px; margin-right: 20px; }
+
+        .info-text p { margin: 5px 0; font-size: 14px; }
+
+        /* 圖片中的“轉換。”大標語 */
+        .main-quote {
+            font-size: 38px;
+            font-weight: 900;
+            margin: 35px 0;
+            color: #000;
+            letter-spacing: 5px;
+        }
+
+        .intro-desc {
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        /* 下方影片區塊：也是用 Flex 分兩半 */
+        .video-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .video-item {
+            flex: 1;
+            text-align: center;
+        }
+
+        .video-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .calendar-title {
+            color: #c00;
+            font-weight: bold;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header class="top-nav">
+    <a href="kamanrider.html" class="home-link">
+    <img src="img/Kamen_rider_series_logo.png" class="logo" alt="Logo"></a>
+    <nav class="nav-links">
+        <a href="CARD.html">假面騎士</a>
+        <a href="series.html">系列介紹</a>
+    </nav>
+</header>
+
+<div class="main-wrapper">
+    <div class="left-col">
+        <img src="img/ryuki_series.jpg" alt="Poster">
+        <div style="font-size: 12px; margin-top: 15px; line-height: 1.6;">
+            <strong>信用</strong><br>
+            <br>原作：石之森章太郎<br>
+            劇本：小林靖子等
+        </div>
+    </div>
+
+    <div class="center-col">
+        <div class="series-header">
+            <img src="img/ryuki_icon.jpg" class="series-icon" alt="Icon">
+            <div class="info-text">
+                <h2 style="margin: 0; font-size: 24px;">假面騎士Ryuki</h2>
+                <p><strong>播出週期</strong> 2002.2.3 - 2003.1.19 [共50集]</p>
+                <p><strong>主題曲</strong> Alive A life /松本梨花</p>
+            </div>
+        </div>
+
+        <div class="main-quote">“戦わなければ生き残れない！”</div>
+
+        <div class="intro-desc">
+         2002年，日本發生多起詭異的人口失蹤案，實習記者城戶真司跟隨前輩桃井令子前往調查此事。
+         真司追隨線索前往其中一個受害者-榊原耕一的家中調查，在其屋內撿到了一個卡盒，得到卡盒的瞬間，真司看到了鏡中奇異的怪獸，在此後誤入鏡世界中遭遇怪物的襲擊，
+         神秘的騎士夜騎出現救下了真司，隨後他結識了神崎優衣與夜騎的變身者秋山蓮，在他們那裡得到了不要參與此次事件的忠告，為了調查事件真相併保護被怪獸襲擊的人們，
+         真司選擇成為假面騎士，被捲入一場為了各自願望而展開的騎士的戰爭中。
+        </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

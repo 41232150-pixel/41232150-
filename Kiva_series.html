@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>假面騎士 Kiva - Kamen Rider Web</title>
+    <style>
+        /* 基本設定 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+            background-color: #f4f1e9; /* 模擬圖片米色背景 */
+            color: #333;
+        }
+
+        /* 頂部導覽列 */
+        .top-nav {
+            background: #fff;
+            border-bottom: 2px solid #999;
+            padding: 10px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo { height: 35px; }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #111;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+         color: red;
+        }
+
+        /* 主容器：使用 Flexbox 分三欄 */
+        .main-wrapper {
+            display: flex; /* 使用 Flex 代替 Grid */
+            max-width: 1300px;
+            margin: 30px auto;
+            padding: 0 20px;
+            align-items: flex-start;
+        }
+
+        /* 左側欄：固定寬度 */
+        .left-col {
+            width: 300px;
+            flex-shrink: 0; /* 防止被擠壓 */
+        }
+
+        .left-col img {
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* 中間主要內容：自動延伸 */
+        .center-col {
+            flex-grow: 1; /* 佔據剩餘空間 */
+            margin: 0 30px;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        /* 右側欄：固定寬度 */
+        .right-col {
+            width: 260px;
+            flex-shrink: 0;
+        }
+
+        /* 標題與 Logo 區塊 */
+        .series-header {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .series-icon { height: 60px; margin-right: 20px; }
+
+        .info-text p { margin: 5px 0; font-size: 14px; }
+
+        /* 圖片中的“轉換。”大標語 */
+        .main-quote {
+            font-size: 38px;
+            font-weight: 900;
+            margin: 35px 0;
+            color: #000;
+            letter-spacing: 5px;
+        }
+
+        .intro-desc {
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        /* 下方影片區塊：也是用 Flex 分兩半 */
+        .video-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .video-item {
+            flex: 1;
+            text-align: center;
+        }
+
+        .video-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .calendar-title {
+            color: #c00;
+            font-weight: bold;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header class="top-nav">
+    <a href="kamanrider.html" class="home-link">
+    <img src="img/Kamen_rider_series_logo.png" class="logo" alt="Logo"></a>
+    <nav class="nav-links">
+        <a href="CARD.html">假面騎士</a>
+        <a href="series.html">系列介紹</a>
+    </nav>
+</header>
+
+<div class="main-wrapper">
+    <div class="left-col">
+        <img src="img/kiva_series.jpg" alt="Poster">
+        <div style="font-size: 12px; margin-top: 15px; line-height: 1.6;">
+            <strong>信用</strong><br>
+            <br>原作：石之森章太郎<br>
+            劇本：荒川稔久等
+        </div>
+    </div>
+
+    <div class="center-col">
+        <div class="series-header">
+            <img src="img/kiva_icon.jpg" class="series-icon" alt="Icon">
+            <div class="info-text">
+                <h2 style="margin: 0; font-size: 24px;">假面騎士Kiva</h2>
+                <p><strong>播出週期</strong> 2008.1.27 - 2009.1.18 [共48集]</p>
+                <p><strong>主題曲</strong> Break The Chain / Tourbillon</p>
+            </div>
+        </div>
+
+        <div class="main-quote">“Wake up！宿命の鎖を解き放て”</div>
+
+        <div class="intro-desc">
+         1986年，變化成人類並靠吸收人類生命能量存活的怪物牙血鬼在世間肆意橫行，只有極少數人注意到了這一切並與牙血鬼展開了戰鬥。某一天，牙血鬼獵人麻生百合被她所狩獵的牙血鬼逼到絕境時，由於一個被她所吸引的男子的干擾而順利逃脫。這個不顧百合的斥責反而一味向她示愛的男子，名叫紅音也。這位天才小提琴演奏家，由此獲悉了牙血鬼的存在。時隔22年後的2008年，出現了一個以口罩覆面，收集垃圾撿魚骨的奇怪青年，他的名字叫紅渡。
+         是紅音也的兒子，他正為了能製作出超越父親遺物「血紅玫瑰」的小提琴而努力修行，但由於他那極度討厭與他人接觸的內向性格，經常會引起各方的誤會。
+         這時，22年前曾一度逃脫的牙血鬼又再次出現了。這時小提琴「血紅玫瑰」的琴弦突然開始振動，聽到這聲音的渡受著本能的驅使前往了牙血鬼出現的現場。
+         被蝙蝠Kivat Ⅲ世咬到後的渡瞬間披上鎧甲，變成了假面騎士Kiva， 為保護人類而戰鬥下去。
+        </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>假面騎士 Kabuto - Kamen Rider Web</title>
+    <style>
+        /* 基本設定 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+            background-color: #f4f1e9; /* 模擬圖片米色背景 */
+            color: #333;
+        }
+
+        /* 頂部導覽列 */
+        .top-nav {
+            background: #fff;
+            border-bottom: 2px solid #999;
+            padding: 10px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo { height: 35px; }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #111;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+         color: red;
+        }
+
+        /* 主容器：使用 Flexbox 分三欄 */
+        .main-wrapper {
+            display: flex; /* 使用 Flex 代替 Grid */
+            max-width: 1300px;
+            margin: 30px auto;
+            padding: 0 20px;
+            align-items: flex-start;
+        }
+
+        /* 左側欄：固定寬度 */
+        .left-col {
+            width: 300px;
+            flex-shrink: 0; /* 防止被擠壓 */
+        }
+
+        .left-col img {
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* 中間主要內容：自動延伸 */
+        .center-col {
+            flex-grow: 1; /* 佔據剩餘空間 */
+            margin: 0 30px;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        /* 右側欄：固定寬度 */
+        .right-col {
+            width: 260px;
+            flex-shrink: 0;
+        }
+
+        /* 標題與 Logo 區塊 */
+        .series-header {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .series-icon { height: 60px; margin-right: 20px; }
+
+        .info-text p { margin: 5px 0; font-size: 14px; }
+
+        /* 圖片中的“轉換。”大標語 */
+        .main-quote {
+            font-size: 38px;
+            font-weight: 900;
+            margin: 35px 0;
+            color: #000;
+            letter-spacing: 5px;
+        }
+
+        .intro-desc {
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .calendar-title {
+            color: #c00;
+            font-weight: bold;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header class="top-nav">
+    <a href="kamanrider.html" class="home-link">
+    <img src="img/Kamen_rider_series_logo.png" class="logo" alt="Logo"></a>
+    <nav class="nav-links">
+        <a href="CARD.html">假面騎士</a>
+        <a href="series.html">系列介紹</a>
+    </nav>
+</header>
+
+<div class="main-wrapper">
+    <div class="left-col">
+        <img src="img/kabuto_series.webp" alt="Poster">
+        <div style="font-size: 12px; margin-top: 15px; line-height: 1.6;">
+            <strong>信用</strong><br>
+            <br>原作：石之森章太郎<br>
+                劇本：米村正二等
+        </div>
+    </div>
+
+    <div class="center-col">
+        <div class="series-header">
+            <img src="img/kabuto_icon.webp" class="series-icon" alt="Icon">
+            <div class="info-text">
+                <h2 style="margin: 0; font-size: 24px;">假面騎士Kabuto</h2>
+                <p><strong>播出週期</strong> 2006.1.29 - 2001.1.21 [共49集]</p>
+                <p><strong>主題曲</strong> NEXT LEVEL / YU-KI</p>
+            </div>
+        </div>
+
+        <div class="main-quote">“天の道を往き、総てを司れ！”</div>
+
+        <div class="intro-desc">
+         1999年10月19日，巨大隕石突然向地球飛來，落下並直接擊中日本澀谷，周圍地區因此毀滅，傷亡慘重，稱為「澀谷隕石事件」。即使7年後，澀谷仍未復興，並持續封鎖中。只是災難並未就此結束，一切才剛開始。
+         隕石落下後，不明宇宙生物擬態成人類活動於城市中，不斷殺害人類並繁殖，造成人們的恐慌。為了消滅這些被稱為異蟲的生物，人類組成了一個秘密組織ZECT。但由於異蟲擁有難以肉眼辨認的高速移動能力「升時化」，ZECT一再戰敗。最後的希望只剩下未及完成的武裝系統假面騎士系統（Masked Rider System）。如果有能夠裝備這套系統，並運用自如的人出現，那麼ZECT就能得到足夠的力量和異蟲對抗。
+         某天，ZECT的實習隊員加賀美新，遇見了一個自稱「行天之道，總司一切」（天の道を往き、総てを司れ！）的奇怪男子。此人名為天道總司。
+         異蟲再度出沒，ZECT隊員們被逼入絕境。目睹苦戰的同伴，加賀美決心要成為騎士而戰。但是，從空中飛來的假面騎士系統核心之一「Kabuto昆蟲儀」，卻飛到了忽然出現的天道手中。把從童年時就得到的腰帶與Kabuto昆蟲儀聯組在一起，天道在一瞬間被獨角仙外型的裝甲服包住身體，輕而易舉的打倒異蟲，假面騎士Kabuto就此誕生。對於他如此桀驁不馴的態度，加賀美感到驚愕而困惑。
+         但是，對於不過是一介平民，而且非組織成員的天道，ZECT判定他沒有資格成為Kabuto的裝備者，並委託接連誕生的新騎士們，抹殺Kabuto適能者天道總司。
+         天道總司能否憑自己一個人的力量守護一切？逐漸明朗化的世界真相又是如何？
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
